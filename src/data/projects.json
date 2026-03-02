@@ -8,20 +8,20 @@
     "learnings": "Aprendí a aplicar principios SOLID en un proyecto real, a manejar excepciones de forma robusta y a documentar código para que otros desarrolladores puedan contribuir.",
     "tech": ["Java", "OOP", "JSON", "MVC"],
     "image": "/placeholder.svg",
-    "repoUrl": "https://github.com/tu-usuario/sistema-viajes",
+    "repoUrl": "https://github.com/Buxx05/sistema-viajes",
     "demoUrl": "",
     "featured": true
   },
   {
-    "id": "dashboard-ventas",
-    "title": "Dashboard de Análisis de Ventas",
-    "short": "Dashboard interactivo en Power BI para visualizar KPIs de ventas y tendencias de mercado.",
-    "long": "Dashboard profesional desarrollado en Power BI que permite visualizar indicadores clave de ventas, analizar tendencias temporales y segmentar datos por región, producto y vendedor. Incluye filtros dinámicos y drill-down para exploración detallada de los datos.",
-    "challenges": "La limpieza y transformación de datos fue compleja debido a múltiples fuentes con formatos inconsistentes. Fue necesario crear un modelo de datos estrella para optimizar las consultas.",
-    "learnings": "Profundicé en modelado dimensional, DAX avanzado y mejores prácticas de visualización de datos para comunicar insights de forma efectiva.",
-    "tech": ["Power BI", "DAX", "SQL", "Excel"],
+    "id": "analisis-ventas-videojuegos",
+    "title": "Análisis de Mercado de Videojuegos",
+    "short": "Dashboard en Power BI para analizar ventas históricas de consolas PlayStation y Xbox.",
+    "long": "Desarrollo de una solución analítica integral para la industria de los videojuegos. El proyecto consistió en la extracción de datos dispersos, limpieza y transformación con Power Query y SQL, y carga en un modelo dimensional. Finalmente, se construyó un dashboard interactivo en Power BI que visualiza la evolución del mercado, las diferencias regionales y el liderazgo histórico de consolas como PS4 y Xbox One, transformando datos en insights para decisiones estratégicas.",
+    "challenges": "El principal desafío fue consolidar y limpiar información histórica dispersa, asegurando la consistencia de los datos entre distintas regiones para crear un modelo de datos robusto que soportara el análisis comparativo.",
+    "learnings": "Fortalecí mis habilidades en la construcción de pipelines de datos combinando SQL con Power Query, y mejoré mi capacidad para diseñar dashboards interactivos que respondan a preguntas de negocio complejas.",
+    "tech": ["Power BI", "Power Query", "SQL Server", "Excel"],
     "image": "/placeholder.svg",
-    "repoUrl": "https://github.com/tu-usuario/dashboard-ventas",
+    "repoUrl": "#",
     "demoUrl": "",
     "featured": true
   },
@@ -34,7 +34,7 @@
     "learnings": "Aprendí a diseñar APIs RESTful siguiendo estándares, a implementar seguridad en aplicaciones web y a escribir tests automatizados.",
     "tech": ["Python", "Flask", "SQL Server", "JWT"],
     "image": "/placeholder.svg",
-    "repoUrl": "https://github.com/tu-usuario/api-inventario",
+    "repoUrl": "https://github.com/Buxx05/api-inventario",
     "demoUrl": "",
     "featured": true
   },
@@ -44,7 +44,7 @@
     "short": "Herramienta web para cálculos estadísticos descriptivos e inferenciales.",
     "tech": ["Python", "Streamlit", "NumPy"],
     "image": "/placeholder.svg",
-    "repoUrl": "https://github.com/tu-usuario/calc-estadistica",
+    "repoUrl": "https://github.com/Buxx05/calc-estadistica",
     "demoUrl": "",
     "featured": false
   },
@@ -54,7 +54,7 @@
     "short": "Script Python para extraer y clasificar noticias tecnológicas automáticamente.",
     "tech": ["Python", "BeautifulSoup", "Pandas"],
     "image": "/placeholder.svg",
-    "repoUrl": "https://github.com/tu-usuario/scraper-noticias",
+    "repoUrl": "https://github.com/Buxx05/scraper-noticias",
     "demoUrl": "",
     "featured": false
   },
@@ -64,7 +64,7 @@
     "short": "Sitio web responsive para empresa ficticia con HTML, CSS y JavaScript vanilla.",
     "tech": ["HTML", "CSS", "JavaScript"],
     "image": "/placeholder.svg",
-    "repoUrl": "https://github.com/tu-usuario/landing-corporativa",
+    "repoUrl": "https://github.com/Buxx05/landing-corporativa",
     "demoUrl": "",
     "featured": false
   }

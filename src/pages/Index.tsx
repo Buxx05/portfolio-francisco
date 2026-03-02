@@ -7,11 +7,11 @@ import CertCard from "@/components/CertCard";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import SectionWrapper from "@/components/SectionWrapper";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { FileText, Users, MessageSquare, Lightbulb, RefreshCw, CalendarCheck, Brain, Globe } from "lucide-react";
+import fotoPerfil from "@/components/images/foto-perfil.jpg";
 
 import projectsData from "@/data/projects.json";
 import certsData from "@/data/certs.json";
@@ -85,10 +85,10 @@ const Index = () => {
         <SectionWrapper id="sobre-mi" title="Sobre mí">
           <div className="flex flex-col items-center gap-8 md:flex-row md:items-start">
             <Avatar className="h-32 w-32 shrink-0 border-4 border-primary/10 shadow-lg">
+              <AvatarImage src={fotoPerfil} alt="Francisco Izaguirre" />
               <AvatarFallback className="bg-primary/5 text-3xl font-bold text-primary">FI</AvatarFallback>
             </Avatar>
             <div className="max-w-2xl space-y-4 text-muted-foreground">
-              {/* COPY: Edita tu biografía aquí */}
               <p>
                 Soy estudiante del 8° ciclo de Ingeniería de Sistemas en la UTP, con experiencia en gestión de inventarios y proyectos académicos en Java, Python y SQL. Me apasiona transformar datos en información accionable y construir soluciones tecnológicas que resuelvan problemas reales.
               </p>
@@ -96,10 +96,10 @@ const Index = () => {
                 He desarrollado dashboards analíticos, APIs REST y aplicaciones de escritorio, siempre buscando aplicar buenas prácticas de ingeniería de software. Mi enfoque combina pensamiento analítico con habilidades técnicas sólidas.
               </p>
               <p>
-                Actualmente busco oportunidades como analista de datos o desarrollador backend junior, donde pueda aportar valor desde el primer día y seguir creciendo profesionalmente.
+                Actualmente busco oportunidades como analista de datos o desarrollador backend junior en Lima, Perú, donde pueda aportar valor desde el primer día y seguir creciendo profesionalmente.
               </p>
               <Button variant="outline" asChild className="mt-2">
-                <a href="/assets/pdf/cv-francisco-izaguirre.pdf" download className="gap-2">
+                <a href="/FranciscoIzaguirreSonco_CV.pdf" download className="gap-2">
                   <FileText size={16} /> Descargar CV
                 </a>
               </Button>
