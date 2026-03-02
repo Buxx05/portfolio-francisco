@@ -1,0 +1,77 @@
+{
+  "technical": [
+    {
+      "category": "Lenguajes",
+      "items": [
+        { "name": "Python", "level": "Intermedio" },
+        { "name": "Java", "level": "Intermedio" },
+        { "name": "SQL", "level": "Avanzado" },
+        { "name": "JavaScript", "level": "Básico" },
+        { "name": "TypeScript", "level": "Básico" }
+      ]
+    },
+    {
+      "category": "Frameworks / Herramientas",
+      "items": [
+        { "name": "Power BI", "level": "Avanzado" },
+        { "name": "Git", "level": "Intermedio" },
+        { "name": "Flask", "level": "Intermedio" },
+        { "name": "React", "level": "Básico" },
+        { "name": "Vite", "level": "Básico" }
+      ]
+    },
+    {
+      "category": "Bases de Datos",
+      "items": [
+        { "name": "SQL Server", "level": "Avanzado" },
+        { "name": "MySQL", "level": "Intermedio" },
+        { "name": "PostgreSQL", "level": "Básico" }
+      ]
+    },
+    {
+      "category": "Fundamentos",
+      "items": [
+        { "name": "Estadística", "level": "Intermedio" },
+        { "name": "Análisis de Datos", "level": "Avanzado" },
+        { "name": "Estructuras de Datos", "level": "Intermedio" },
+        { "name": "Metodologías Ágiles", "level": "Intermedio" }
+      ]
+    }
+  ],
+  "soft": [
+    {
+      "name": "Trabajo en equipo",
+      "description": "Experiencia colaborando en proyectos académicos multidisciplinarios.",
+      "icon": "Users"
+    },
+    {
+      "name": "Comunicación",
+      "description": "Exposición técnica clara ante audiencias variadas.",
+      "icon": "MessageSquare"
+    },
+    {
+      "name": "Resolución de problemas",
+      "description": "Enfoque analítico para descomponer y resolver retos complejos.",
+      "icon": "Lightbulb"
+    },
+    {
+      "name": "Adaptabilidad",
+      "description": "Aprendizaje rápido de nuevas tecnologías y metodologías.",
+      "icon": "RefreshCw"
+    },
+    {
+      "name": "Organización",
+      "description": "Gestión efectiva del tiempo y priorización de tareas.",
+      "icon": "CalendarCheck"
+    },
+    {
+      "name": "Pensamiento crítico",
+      "description": "Evaluación objetiva de información para tomar mejores decisiones.",
+      "icon": "Brain"
+    }
+  ],
+  "languages": [
+    { "name": "Español", "level": "Nativo" },
+    { "name": "Inglés", "level": "Intermedio (B1/B2)" }
+  ]
+}

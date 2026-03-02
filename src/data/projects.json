@@ -1,0 +1,71 @@
+[
+  {
+    "id": "sistema-viajes",
+    "title": "Sistema de Gestión de Viajes",
+    "short": "Aplicación Java para registrar y gestionar viajes con lógica modular y persistencia en archivos.",
+    "long": "Sistema completo de gestión de viajes desarrollado en Java con arquitectura modular. Permite registrar viajes, gestionar pasajeros, calcular costos y generar reportes. Implementa patrones de diseño como MVC y DAO para mantener el código limpio y escalable. Los datos se persisten en archivos JSON locales.",
+    "challenges": "El principal reto fue implementar la persistencia de datos sin una base de datos, usando serialización JSON. También fue necesario diseñar una arquitectura que permitiera agregar nuevas funcionalidades sin modificar el código existente.",
+    "learnings": "Aprendí a aplicar principios SOLID en un proyecto real, a manejar excepciones de forma robusta y a documentar código para que otros desarrolladores puedan contribuir.",
+    "tech": ["Java", "OOP", "JSON", "MVC"],
+    "image": "/placeholder.svg",
+    "repoUrl": "https://github.com/tu-usuario/sistema-viajes",
+    "demoUrl": "",
+    "featured": true
+  },
+  {
+    "id": "dashboard-ventas",
+    "title": "Dashboard de Análisis de Ventas",
+    "short": "Dashboard interactivo en Power BI para visualizar KPIs de ventas y tendencias de mercado.",
+    "long": "Dashboard profesional desarrollado en Power BI que permite visualizar indicadores clave de ventas, analizar tendencias temporales y segmentar datos por región, producto y vendedor. Incluye filtros dinámicos y drill-down para exploración detallada de los datos.",
+    "challenges": "La limpieza y transformación de datos fue compleja debido a múltiples fuentes con formatos inconsistentes. Fue necesario crear un modelo de datos estrella para optimizar las consultas.",
+    "learnings": "Profundicé en modelado dimensional, DAX avanzado y mejores prácticas de visualización de datos para comunicar insights de forma efectiva.",
+    "tech": ["Power BI", "DAX", "SQL", "Excel"],
+    "image": "/placeholder.svg",
+    "repoUrl": "https://github.com/tu-usuario/dashboard-ventas",
+    "demoUrl": "",
+    "featured": true
+  },
+  {
+    "id": "api-inventario",
+    "title": "API REST de Inventario",
+    "short": "API RESTful en Python/Flask para gestión de inventario con autenticación JWT.",
+    "long": "API backend desarrollada con Flask que permite gestionar un sistema de inventario completo. Incluye autenticación JWT, CRUD de productos, categorías y proveedores, paginación y filtros avanzados. Documentada con Swagger/OpenAPI.",
+    "challenges": "Implementar la autenticación JWT de forma segura y manejar las relaciones entre entidades fue el mayor desafío. También optimicé las consultas SQL para manejar grandes volúmenes de datos.",
+    "learnings": "Aprendí a diseñar APIs RESTful siguiendo estándares, a implementar seguridad en aplicaciones web y a escribir tests automatizados.",
+    "tech": ["Python", "Flask", "SQL Server", "JWT"],
+    "image": "/placeholder.svg",
+    "repoUrl": "https://github.com/tu-usuario/api-inventario",
+    "demoUrl": "",
+    "featured": true
+  },
+  {
+    "id": "calculadora-estadistica",
+    "title": "Calculadora Estadística",
+    "short": "Herramienta web para cálculos estadísticos descriptivos e inferenciales.",
+    "tech": ["Python", "Streamlit", "NumPy"],
+    "image": "/placeholder.svg",
+    "repoUrl": "https://github.com/tu-usuario/calc-estadistica",
+    "demoUrl": "",
+    "featured": false
+  },
+  {
+    "id": "scraper-noticias",
+    "title": "Web Scraper de Noticias",
+    "short": "Script Python para extraer y clasificar noticias tecnológicas automáticamente.",
+    "tech": ["Python", "BeautifulSoup", "Pandas"],
+    "image": "/placeholder.svg",
+    "repoUrl": "https://github.com/tu-usuario/scraper-noticias",
+    "demoUrl": "",
+    "featured": false
+  },
+  {
+    "id": "landing-page",
+    "title": "Landing Page Corporativa",
+    "short": "Sitio web responsive para empresa ficticia con HTML, CSS y JavaScript vanilla.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "image": "/placeholder.svg",
+    "repoUrl": "https://github.com/tu-usuario/landing-corporativa",
+    "demoUrl": "",
+    "featured": false
+  }
+]
