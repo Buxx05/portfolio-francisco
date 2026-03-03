@@ -74,13 +74,6 @@ const Header = () => {
             >
               {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
-            <Button size="sm" asChild>
-              <a href="https://mail.google.com/mail/?view=cm&to=fizaguirresonco05@gmail.com&su=Contacto%20desde%20tu%20portafolio"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                Contactar
-              </a>
-            </Button>
           </li>
         </ul>
 

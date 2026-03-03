@@ -1,37 +1,65 @@
 [
   {
-    "id": "sql-server",
-    "name": "Certificación en SQL Server",
-    "issuer": "Instituto Nacional de Tecnología",
-    "year": 2024,
-    "file": "/assets/pdf/cert-sql-server.pdf"
+    "id": "sql-server-uni",
+    "name": "Especialización: SQL Server Database Administrator",
+    "issuer": "Universidad Nacional de Ingeniería (CEPS UNI)",
+    "date": "Enero 2026",
+    "image": "/images/cert/SQL.png",
+    "pdfUrl": "/pdfs/SQL.pdf",
+    "type": "curso"
   },
   {
-    "id": "power-bi",
-    "name": "Microsoft Power BI Data Analyst",
-    "issuer": "Microsoft Learn",
-    "year": 2024,
-    "file": "/assets/pdf/cert-power-bi.pdf"
+    "id": "data-analytics-guayerd",
+    "name": "Data Analytics",
+    "issuer": "Guayerd + Beta Hub",
+    "date": "Noviembre 2025",
+    "image": "/images/cert/Analytics.png",
+    "pdfUrl": "/pdfs/Analytics.pdf",
+    "type": "curso"
   },
   {
-    "id": "python-basico",
-    "name": "Python para Ciencia de Datos",
-    "issuer": "Platzi",
-    "year": 2023,
-    "file": "/assets/pdf/cert-python.pdf"
+    "id": "britanico",
+    "name": "Inglés Intermedio",
+    "issuer": "Británico",
+    "date": "Noviembre 2025",
+    "image": "/images/cert/Britanico.png",
+    "pdfUrl": "/pdfs/Britanico.pdf",
+    "type": "curso"
   },
   {
-    "id": "scrum",
-    "name": "Scrum Fundamentals Certified",
-    "issuer": "SCRUMstudy",
-    "year": 2023,
-    "file": "/assets/pdf/cert-scrum.pdf"
+    "id": "excel-server-uni",
+    "name": "Especialización: Excel Empresarial",
+    "issuer": "Universidad Nacional de Ingeniería (CEPS UNI)",
+    "date": "Enero 2025",
+    "image": "/images/cert/Excel.png",
+    "pdfUrl": "/pdfs/Excel.pdf",
+    "type": "curso"
   },
   {
-    "id": "git-github",
-    "name": "Git y GitHub Profesional",
-    "issuer": "Platzi",
-    "year": 2023,
-    "file": "/assets/pdf/cert-git.pdf"
+    "id": "voluntariado_CS-UTP",
+    "name": "Miembro del Comité de Inteligencia Artificial y Proyectos",
+    "issuer": "IEEE Computer Society - UTP Student Branch",
+    "date": "Actualidad",
+    "image": "/images/cert/CS_UTP.png",
+    "pdfUrl": "/pdfs/CS_UTP.pdf",
+    "type": "voluntariado"
+  },
+  {
+    "id": "community",
+    "name": "Community Game Making",
+    "issuer": "Arizona State University",
+    "date": "Diciembre 2025",
+    "image": "/images/cert/Community.png",
+    "pdfUrl": "/pdfs/Community.pdf",
+    "type": "voluntariado"
+  },
+  {
+    "id": "voluntariado-usf",
+    "name": "Analista de Datos de Campo",
+    "issuer": "UNI & Universitarios Sin Fronteras",
+    "date": "Octubre 2025",
+    "image": "/images/cert/Quirio.png",
+    "pdfUrl": "/pdfs/Quirio.pdf",
+    "type": "voluntariado"
   }
 ]

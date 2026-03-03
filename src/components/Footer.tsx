@@ -24,8 +24,7 @@ const Footer = () => {
             ))}
           </ul>
         </nav>
-        <p>© {new Date().getFullYear()} Francisco Izaguirre. Todos los derechos reservados.</p>
-        <p className="text-xs">Hecho con React + Tailwind CSS</p>
+        <p>© {new Date().getFullYear()} Francisco Izaguirre. Todos los derechos reservados.</p> 
       </div>
     </footer>
   );

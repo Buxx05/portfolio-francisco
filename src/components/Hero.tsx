@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 interface HeroProps {
   photoSrc?: string;
-  email?: string;
+  // Se eliminó 'email' porque ya no se usa
 }
 
 const containerVariants = {
@@ -23,7 +23,7 @@ const itemVariants = {
 const GMAIL_LINK = "https://mail.google.com/mail/?view=cm&to=fizaguirresonco05@gmail.com&su=Contacto%20desde%20tu%20portafolio";
 
 const Hero = ({
-  photoSrc = "public/images/foto-perfil.jpg",
+  photoSrc = "/images/foto-perfil.jpg",
 }: HeroProps) => {
   const scrollToProjects = () => {
     document.querySelector("#proyectos")?.scrollIntoView({ behavior: "smooth" });
@@ -72,7 +72,7 @@ const Hero = ({
 
           <motion.p
             variants={itemVariants}
-            className="mb-8 max-w-lg text-muted-foreground md:text-lg"
+            className="mb-8 max-w-lg text-muted-foreground md:text-lg mx-auto md:mx-0"
           >
             Convierto datos complejos en decisiones estratégicas y construyo
             soluciones de software robustas — desde la arquitectura hasta el despliegue en producción.
@@ -80,7 +80,8 @@ const Hero = ({
 
           <motion.div
             variants={itemVariants}
-            className="flex flex-col items-center gap-3 sm:flex-row md:items-start"
+            // AÑADIDO: flex-wrap y justify-center para evitar que los 3 botones se aprieten
+            className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap md:justify-start md:items-start"
           >
             <Button size="lg" onClick={scrollToProjects} className="gap-2">
               Ver proyectos <ArrowDown size={16} />
@@ -110,7 +111,7 @@ const Hero = ({
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="relative"
+          className="relative shrink-0"
         >
           <div className="absolute -inset-2 rounded-full bg-gradient-to-br from-primary/20 to-transparent blur-sm" />
           <Avatar className="relative h-40 w-40 border-4 border-background shadow-2xl md:h-56 md:w-56">

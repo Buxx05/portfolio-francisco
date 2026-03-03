@@ -1,77 +1,41 @@
 {
   "technical": [
     {
-      "category": "Lenguajes",
+      "category": "Análisis de Datos & BD",
       "items": [
-        { "name": "Python", "level": "Intermedio" },
-        { "name": "Java", "level": "Intermedio" },
-        { "name": "SQL", "level": "Avanzado" },
-        { "name": "JavaScript", "level": "Básico" },
-        { "name": "TypeScript", "level": "Básico" }
+        { "name": "Power BI", "sub": "Power Query, DAX" },
+        { "name": "Excel", "sub": "Macros, Funciones Avanzadas" },
+        { "name": "SQL Server", "sub": "SSIS, T-SQL, ETL" },
+        { "name": "Python", "sub": "Pandas, Matplotlib" },
+        { "name": "MySQL", "sub": "Diseño Relacional" }
       ]
     },
     {
-      "category": "Frameworks / Herramientas",
+      "category": "Desarrollo de Software",
       "items": [
-        { "name": "Power BI", "level": "Avanzado" },
-        { "name": "Git", "level": "Intermedio" },
-        { "name": "Flask", "level": "Intermedio" },
-        { "name": "React", "level": "Básico" },
-        { "name": "Vite", "level": "Básico" }
+        { "name": "React", "sub": "TypeScript, Tailwind CSS" },
+        { "name": "C#", "sub": "Godot, POO" },
+        { "name": "Java", "sub": "Backend, POO" },
+        { "name": "HTML", "sub": "Landing Pages" },
+        { "name": "CSS", "sub": "Flexbox, Grid" }
       ]
     },
     {
-      "category": "Bases de Datos",
+      "category": "Herramientas",
       "items": [
-        { "name": "SQL Server", "level": "Avanzado" },
-        { "name": "MySQL", "level": "Intermedio" },
-        { "name": "PostgreSQL", "level": "Básico" }
-      ]
-    },
-    {
-      "category": "Fundamentos",
-      "items": [
-        { "name": "Estadística", "level": "Intermedio" },
-        { "name": "Análisis de Datos", "level": "Avanzado" },
-        { "name": "Estructuras de Datos", "level": "Intermedio" },
-        { "name": "Metodologías Ágiles", "level": "Intermedio" }
+        { "name": "Git", "sub": "GitHub, Versionado" },
+        { "name": "Supabase", "sub": "BaaS, Autenticación" }
       ]
     }
   ],
   "soft": [
-    {
-      "name": "Trabajo en equipo",
-      "description": "Experiencia colaborando en proyectos académicos multidisciplinarios.",
-      "icon": "Users"
-    },
-    {
-      "name": "Comunicación",
-      "description": "Exposición técnica clara ante audiencias variadas.",
-      "icon": "MessageSquare"
-    },
-    {
-      "name": "Resolución de problemas",
-      "description": "Enfoque analítico para descomponer y resolver retos complejos.",
-      "icon": "Lightbulb"
-    },
-    {
-      "name": "Adaptabilidad",
-      "description": "Aprendizaje rápido de nuevas tecnologías y metodologías.",
-      "icon": "RefreshCw"
-    },
-    {
-      "name": "Organización",
-      "description": "Gestión efectiva del tiempo y priorización de tareas.",
-      "icon": "CalendarCheck"
-    },
-    {
-      "name": "Pensamiento crítico",
-      "description": "Evaluación objetiva de información para tomar mejores decisiones.",
-      "icon": "Brain"
-    }
+    { "name": "Pensamiento Analítico", "icon": "Brain" },
+    { "name": "Resolución de Problemas", "icon": "Lightbulb" },
+    { "name": "Trabajo en Equipo", "icon": "Users" },
+    { "name": "Comunicación Efectiva", "icon": "MessageSquare" }
   ],
   "languages": [
     { "name": "Español", "level": "Nativo" },
-    { "name": "Inglés", "level": "Intermedio (B1/B2)" }
+    { "name": "Inglés", "level": "Intermedio" }
   ]
 }

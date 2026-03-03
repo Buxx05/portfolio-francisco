@@ -35,10 +35,10 @@
     "challenges": "El principal reto técnico fue implementar un sistema de roles seguro (Admin, Vendedor, Cliente) y gestionar la concurrencia en la base de datos al realizar cargas y canjes de puntos, garantizando que el saldo de los usuarios siempre fuera preciso.",
     "learnings": "Consolidé mis conocimientos en el ecosistema de React y TypeScript, además de adquirir experiencia práctica integrando Backend-as-a-Service (BaaS) con Supabase para la autenticación y la gestión de la base de datos.",
     "tech": ["React", "TypeScript", "Tailwind CSS", "Supabase"],
-    "image": "/placeholder.svg",
-    "gallery": ["/placeholder.svg", "/placeholder.svg"],
-    "repoUrl": "https://github.com/tu-usuario/mr-humo-smoke-shop",
-    "demoUrl": "",
+    "image": "/images/mrHumo/mrHumo_portada.png",
+    "gallery": ["/images/mrHumo/mrHumo1.png", "/images/mrHumo/mrHumo2.png", "/images/mrHumo/mrHumo3.png", "/images/mrHumo/mrHumo4.png", "/images/mrHumo/mrHumo5.png", "/images/mrHumo/mrHumo6.png", "/images/mrHumo/mrHumo7.png", "/images/mrHumo/mrHumo8.png"],
+    "repoUrl": "https://github.com/Buxx05/mr.-humo-smoke-shop",
+    "demoUrl": "https://mr-humo-smoke-shop.vercel.app/",
     "featured": true
   },
   {
