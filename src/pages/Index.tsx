@@ -11,7 +11,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { FileText, Users, MessageSquare, Lightbulb, RefreshCw, CalendarCheck, Brain, Globe } from "lucide-react";
-import fotoPerfil from "@/components/images/foto-perfil.jpg";
 
 import projectsData from "@/data/projects.json";
 import certsData from "@/data/certs.json";
@@ -85,7 +84,7 @@ const Index = () => {
         <SectionWrapper id="sobre-mi" title="Sobre mí">
           <div className="flex flex-col items-center gap-8 md:flex-row md:items-start">
             <Avatar className="h-32 w-32 shrink-0 border-4 border-primary/10 shadow-lg">
-              <AvatarImage src={fotoPerfil} alt="Francisco Izaguirre" />
+              <AvatarImage src="public/images/foto-perfil.jpg" alt="Francisco Izaguirre" />
               <AvatarFallback className="bg-primary/5 text-3xl font-bold text-primary">FI</AvatarFallback>
             </Avatar>
             <div className="max-w-2xl space-y-4 text-muted-foreground">

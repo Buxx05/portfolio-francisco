@@ -1,33 +1,93 @@
-import { BarChart4, Database, FileSpreadsheet, Terminal, Coffee, Settings2, Globe, Cpu, LayoutTemplate } from "lucide-react";
+import { Code2, LayoutTemplate } from "lucide-react";
 
 interface TechBadgeProps {
   name: string;
+  showLabel?: boolean; // Nueva propiedad para controlar si se muestra el texto
 }
 
-const TechBadge = ({ name }: TechBadgeProps) => {
-  const getIconAndColor = (tech: string) => {
-    const t = tech.toLowerCase();
+const getTechData = (tech: string) => {
+  const t = tech.toLowerCase();
+  
+  // Diccionario de logos con colores originales en SVG
+  const logos: Record<string, string> = {
+    // Análisis de Datos
+    "power bi": "https://img.icons8.com/?size=100&id=Ny0t2MYrJ70p&format=png&color=000000", 
+    "power query": "https://img.icons8.com/?size=100&id=qYfwpsRXEcpc&format=png&color=000000",
+    "excel": "https://img.icons8.com/?size=100&id=y5utoW4FUM92&format=png&color=000000",
+    "sql server": "https://img.icons8.com/?size=100&id=laYYF3dV0Iew&format=png&color=000000",
+    "mysql": "https://img.icons8.com/?size=100&id=hYoELNwniGhi&format=png&color=000000",
+    "sql": "https://img.icons8.com/?size=100&id=J6KcaRLsTgpZ&format=png&color=000000",
     
-    // Asignación de iconos y colores según la tecnología
-    if (t.includes("power bi")) return { Icon: BarChart4, color: "text-yellow-500" };
-    if (t.includes("excel")) return { Icon: FileSpreadsheet, color: "text-green-500" };
-    if (t.includes("sql") || t.includes("database")) return { Icon: Database, color: "text-blue-400" };
-    if (t.includes("python")) return { Icon: Terminal, color: "text-blue-500" };
-    if (t.includes("java") && !t.includes("script")) return { Icon: Coffee, color: "text-orange-500" };
-    if (t.includes("power query")) return { Icon: Settings2, color: "text-yellow-600" };
-    if (t.includes("html") || t.includes("css") || t.includes("web")) return { Icon: Globe, color: "text-orange-400" };
-    if (t.includes("ui") || t.includes("ux")) return { Icon: LayoutTemplate, color: "text-pink-400" };
+    // Desarrollo Backend & Frontend
+    "python": "https://img.icons8.com/?size=100&id=13441&format=png&color=000000",
+    "java": "https://img.icons8.com/?size=100&id=13679&format=png&color=000000",
+    "c#": "https://img.icons8.com/?size=100&id=Fycm8TUhWmFU&format=png&color=000000",
+    "php": "https://img.icons8.com/?size=100&id=f0R4xVI4Sc8O&format=png&color=000000",
+    "flask": "https://img.icons8.com/?size=100&id=TtXEs5SeYLG8&format=png&color=000000",
+    "html": "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
+    "css": "https://img.icons8.com/?size=100&id=21278&format=png&color=000000",
+    "javascript": "https://img.icons8.com/?size=100&id=108784&format=png&color=000000",
+    "react": "https://img.icons8.com/?size=100&id=123603&format=png&color=000000",
+    "typescript": "https://cdn.simpleicons.org/typescript/3178C6",
+    "tailwind css": "https://cdn.simpleicons.org/tailwindcss/06B6D4",
+    "supabase": "https://cdn.simpleicons.org/supabase/3ECF8E",
     
-    // Default
-    return { Icon: Cpu, color: "text-primary" };
+    // Herramientas y Otros
+    "godot": "https://img.icons8.com/?size=100&id=UGrLCnKJf6Px&format=png&color=000000",
+    "json": "https://img.icons8.com/?size=100&id=T46NNXhv79TD&format=png&color=000000",
+    "jwt": "https://img.icons8.com/?size=100&id=rHpveptSuwDz&format=png&color=000000",
+    "git": "https://img.icons8.com/?size=100&id=20906&format=png&color=000000",
+    "github": "https://img.icons8.com/?size=100&id=4Z2nCrz5iPY2&format=png&color=000000",
   };
 
-  const { Icon, color } = getIconAndColor(name);
+  const matchedKey = Object.keys(logos).find(key => t === key) || Object.keys(logos).find(key => t.includes(key));
+  
+  if (matchedKey) {
+    return { isImage: true, src: logos[matchedKey] };
+  }
 
+  if (t.includes("ui") || t.includes("ux")) return { isImage: false, Icon: LayoutTemplate };
+  return { isImage: false, Icon: Code2 };
+};
+
+const TechBadge = ({ name, showLabel = false }: TechBadgeProps) => {
+  const data = getTechData(name);
+
+  // Si showLabel es true, aplicamos los estilos de "píldora" (pill)
+  if (showLabel) {
+    return (
+      <span 
+        className="inline-flex items-center gap-2 rounded-full border border-border/50 bg-secondary/30 pl-1 pr-3 py-1 text-xs font-medium text-secondary-foreground shadow-sm"
+        title={name}
+      >
+        {data.isImage ? (
+          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full p-[3px]">
+            <img src={data.src} alt={name} className="h-full w-full object-contain" />
+          </span>
+        ) : (
+          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+            {data.Icon && <data.Icon size={14} />}
+          </span>
+        )}
+        <span className="leading-none">{name}</span>
+      </span>
+    );
+  }
+
+  // Si showLabel es false (en las tarjetas), mostramos solo el icono circular
   return (
-    <span className="inline-flex items-center gap-1.5 rounded-md border border-border bg-secondary/50 px-2.5 py-0.5 text-xs font-medium text-secondary-foreground transition-colors hover:bg-secondary">
-      <Icon size={14} className={color} />
-      {name}
+    <span 
+      className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-secondary/20 p-1.5 transition-transform hover:-translate-y-1 hover:bg-secondary/40 shadow-sm"
+      title={name}
+      aria-label={`Tecnología: ${name}`}
+    >
+      {data.isImage ? (
+        <img src={data.src} alt={name} className="h-full w-full object-contain drop-shadow-sm" loading="lazy" />
+      ) : (
+        <span className="text-primary">
+          {data.Icon && <data.Icon size={18} />}
+        </span>
+      )}
     </span>
   );
 };

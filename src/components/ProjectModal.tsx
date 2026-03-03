@@ -7,6 +7,13 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import TechBadge from "./TechBadge";
 
 interface Project {
@@ -18,6 +25,7 @@ interface Project {
   learnings?: string;
   tech: string[];
   image: string;
+  gallery?: string[];
   repoUrl: string;
   demoUrl?: string;
 }
@@ -36,7 +44,7 @@ const ProjectModal = ({ project, open, onOpenChange }: ProjectModalProps) => {
       <DialogContent className="p-0 sm:max-w-3xl overflow-hidden border-primary/20 bg-background/95 backdrop-blur-xl">
         <ScrollArea className="max-h-[85vh] w-full">
           
-          {/* Header con Imagen */}
+          {/* Header con Imagen Principal (Portada) */}
           <div className="relative aspect-[21/9] w-full overflow-hidden bg-muted">
             <img src={project.image} alt={project.title} className="h-full w-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
@@ -53,15 +61,50 @@ const ProjectModal = ({ project, open, onOpenChange }: ProjectModalProps) => {
             {/* Tech Stack */}
             <div className="flex flex-wrap items-center gap-2">
               <Code2 size={16} className="text-muted-foreground mr-1" />
-              {project.tech.map((t) => <TechBadge key={t} name={t} />)}
+              {project.tech.map((t) => <TechBadge key={t} name={t} showLabel={true} />)}
             </div>
 
             {/* Descripción General */}
             {project.long && (
               <div className="space-y-3">
-                <p className="text-base leading-relaxed text-muted-foreground">
+                <p className="text-base leading-relaxed text-muted-foreground whitespace-pre-line">
                   {project.long}
                 </p>
+              </div>
+            )}
+
+            {/* Carrusel de Imágenes Adicionales */}
+            {project.gallery && project.gallery.length > 0 && (
+              <div className="space-y-4 pt-4 border-t border-border/50">
+                <h3 className="font-semibold text-foreground">Galería del proyecto</h3>
+                
+                {/* Contenedor del carrusel con padding para que los botones no se corten */}
+                <div className="px-12">
+                  <Carousel
+                    opts={{
+                      align: "start",
+                      loop: true,
+                    }}
+                    className="w-full"
+                  >
+                    <CarouselContent>
+                      {project.gallery.map((imgSrc, index) => (
+                        <CarouselItem key={index}>
+                          <div className="aspect-video overflow-hidden rounded-lg border border-border/50 bg-muted shadow-sm">
+                            <img 
+                              src={imgSrc} 
+                              alt={`${project.title} captura ${index + 1}`} 
+                              className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                              loading="lazy" 
+                            />
+                          </div>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="hidden sm:flex" />
+                    <CarouselNext className="hidden sm:flex" />
+                  </Carousel>
+                </div>
               </div>
             )}
 

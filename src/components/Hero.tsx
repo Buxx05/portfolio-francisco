@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { ArrowDown, Mail, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import fotoPerfil from "./images/foto-perfil.jpg";
 
 interface HeroProps {
   photoSrc?: string;
@@ -24,7 +23,7 @@ const itemVariants = {
 const GMAIL_LINK = "https://mail.google.com/mail/?view=cm&to=fizaguirresonco05@gmail.com&su=Contacto%20desde%20tu%20portafolio";
 
 const Hero = ({
-  photoSrc = fotoPerfil,
+  photoSrc = "public/images/foto-perfil.jpg",
 }: HeroProps) => {
   const scrollToProjects = () => {
     document.querySelector("#proyectos")?.scrollIntoView({ behavior: "smooth" });
